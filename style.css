@@ -179,7 +179,7 @@ body{
 }@media (max-width : 390px){
     .gallery{
         height: 130px;
-        background: yellow;
+        background: pink;
         padding: 10px 0;
 }
     .title{

@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #000d1a;
+
+}
+.title{
+    font-size: 60px;
+    padding-top: 100px;
+    text-align:center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #F7F4F3;
+}
+.page{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery_wrap{
+    width: 1050px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background: white;
+}
+.gallery{
+    width: 900px;
+    height: 425px;
+    display: flex;
+    overflow-x: auto;
+}
+.row{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 35px;
+    padding: 10px;
+    cursor: pointer;
+    flex: none;
+}
+.row img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+.row img:hover{
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+.back_btn,.next_btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back_btn i,.next_btn i{
+    font-size: 40px;
+}
+@media (max-width : 1200px){
+    .gallery{
+        height: 390px;  
+        padding: 31px 2px;
+        }
+    .title{
+        font-size: 60px;
+        padding-top: 100px;
+    }
+    .back_btn,.next_btn{
+        width: 30px;
+        height: 30px;
+    } 
+    .back_btn i,.next_btn i{
+        font-size: 30px;
+    }
+    .back_btn{
+        margin-left: 25px;
+        margin-right: -1px;
+    }
+    .next_btn{
+        margin-left: -1px;
+        margin-right: 25px;
+    }
+    .gallery_wrap{
+        margin-top: 60px;
+        width: 790px;
+        height: 390px;
+        background: white;
+    }
+    .row{
+        grid-gap: 30px;
+    }
+}
+
+@media (max-width : 900px){
+    .gallery{
+        width: 500px;
+        height: 260px;
+        padding-top: 10px;
+    }
+    .title{
+        font-size: 45px;
+        padding-top: 100px;
+    }
+    .back_btn,.next_btn{
+        width: 35px;
+        height: 35px;
+        margin: 10px;
+    } 
+    .back_btn i,.next_btn i{
+        font-size: 35px;
+    }
+    .back_btn{
+        margin-right: -1px;
+    }
+    .next_btn{
+        margin-left: -1px;
+    }
+    .gallery_wrap{
+        margin-top: 60px;
+        width: 600px;
+        height: 270px;
+        background: white;
+    }
+    .row{
+        grid-gap: 20px;
+    }
+}
+@media (max-width : 670px){
+    .gallery{
+        height: 200px;  
+        padding-bottom: 2px;
+
+}
+    .title{
+        font-size: 50px;
+        padding-top: 100px;
+    }
+    .back_btn,.next_btn{
+        width: 30px;
+        height: 30px;
+        margin: 15px;
+    } 
+    .back_btn i,.next_btn i{
+        font-size: 30px;
+    }
+    .back_btn{
+        margin-right: -1px;
+    }
+    .next_btn{
+        margin-left: -1px;
+    }
+    .gallery_wrap{
+        margin-top: 60px;
+        width: 455px;
+        height: 200px;
+        background: white;
+    }
+    .row{
+        grid-gap: 15px;
+    }
+}

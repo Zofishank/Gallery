@@ -178,6 +178,8 @@ body{
     }
 }@media (max-width : 390px){
     .gallery{
+        height: 150px;
+        background: yellow;
         padding: 10px 0;
 }
     .title{

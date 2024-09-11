@@ -178,7 +178,8 @@ body{
     }
 }@media (max-width : 390px){
     .gallery{
-        height: 200px;  
+        height: 150px;
+        background: yellow;  
         padding-bottom: 2px;
 }
     .title{
@@ -206,6 +207,6 @@ body{
         background: white;
     }
     .row{
-        grid-gap: 15px;
+        grid-gap: 10px;
     }
 }

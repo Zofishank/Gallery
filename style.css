@@ -176,4 +176,36 @@ body{
     .row{
         grid-gap: 15px;
     }
+}@media (max-width : 390px){
+    .gallery{
+        height: 200px;  
+        padding-bottom: 2px;
+}
+    .title{
+        font-size: 50px;
+        padding-top: 100px;
+    }
+    .back_btn,.next_btn{
+        width: 30px;
+        height: 30px;
+        margin: 15px;
+    } 
+    .back_btn i,.next_btn i{
+        font-size: 30px;
+    }
+    .back_btn{
+        margin-right: -1px;
+    }
+    .next_btn{
+        margin-left: -1px;
+    }
+    .gallery_wrap{
+        margin-top: 60px;
+        width: 350px;
+        height: 200px;
+        background: white;
+    }
+    .row{
+        grid-gap: 15px;
+    }
 }
